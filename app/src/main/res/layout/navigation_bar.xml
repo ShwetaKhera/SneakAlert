@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.hp.SneakAlert.HomeActivity"
+    android:orientation="vertical"
+    android:id="@+id/side_nav_bar"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:background="#F2E4D5"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentBottom="true">
+
+
+    <com.example.hp.SneakAlert.RoundedImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onClick"
+            android:layout_marginTop="62dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/sign_bg" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:text="Shweta Khera"
+        android:layout_marginTop="113dp"
+        android:layout_alignTop="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif-monospace"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:text="PRIVACY"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/privacy"
+        android:textColor="#000"
+        android:fontFamily="serif-monospace"
+        android:textStyle="italic"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/settings"
+        android:layout_alignStart="@+id/settings" />
+
+    <TextView
+        android:text="ABOUT US"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_us"
+        android:textColor="#000"
+        android:fontFamily="serif-monospace"
+        android:textStyle="italic"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignStart="@+id/privacy"
+        android:layout_marginTop="37dp" />
+
+    <TextView
+        android:text="SETTINGS"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings"
+        android:textColor="#000"
+        android:fontFamily="serif-monospace"
+        android:textStyle="italic"
+        android:layout_marginTop="109dp"
+        android:layout_below="@+id/profile_name"
+        android:layout_alignStart="@+id/home" />
+
+    <TextView
+        android:text="HOME"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home"
+        android:textColor="#000"
+        android:fontFamily="serif-monospace"
+        android:textStyle="italic"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/about_us"
+        android:id="@+id/imageView4"
+        android:layout_alignTop="@+id/about_us"
+        android:layout_toStartOf="@+id/profile_image"
+        android:layout_marginEnd="18dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_settings_black_24dp"
+        android:id="@+id/imageView2"
+        android:layout_alignBottom="@+id/privacy"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_lock_black_24dp"
+        android:id="@+id/imageView3"
+        android:layout_above="@+id/privacy"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_home_black_24dp"
+        android:id="@+id/imageView"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3" />
+
+</RelativeLayout>
+
